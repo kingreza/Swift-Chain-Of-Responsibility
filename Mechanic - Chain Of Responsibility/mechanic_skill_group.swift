@@ -32,7 +32,7 @@ class MechanicSkillGroup{
       if let firstAvailableMechanic = mechanics.filter({$0.isBusy == false}).first{
         return firstAvailableMechanic.performJob(job)
       }
-      assert(false, "This should never be reached since our if-else statment is fully exhaustive. You cannot have both all mechanics busy and an available mechanic within one skill group");
+      assert(false, "This should never be reached since our if-else statement is fully exhaustive. You cannot have both all mechanics busy and an available mechanic within one skill group");
     }
   }
 }

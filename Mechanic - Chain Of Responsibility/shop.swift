@@ -13,11 +13,10 @@ class Shop{
   private var firstMechanics: MechanicSkillGroup
   
   init(firstMechanics: MechanicSkillGroup){
-          
       self.firstMechanics = firstMechanics
   }
   
-  func performJob(job: Job){
-    firstMechanics.performJobOrPassItUp(job)
+  func performJob(job: Job) -> Bool{
+    return firstMechanics.performJobOrPassItUp(job)
   }
 }

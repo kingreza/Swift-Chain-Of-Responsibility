@@ -10,24 +10,14 @@ import Foundation
 
 class Shop{
  
-  private var firstMechanics: [Mechanic]
+  private var firstMechanics: MechanicSkillGroup
   
-  init(firstMechanics: [Mechanic]){
+  init(firstMechanics: MechanicSkillGroup){
           
       self.firstMechanics = firstMechanics
   }
   
-  func performJob(job: Job)
-  {
-    var performed = false
-    for mechanic in firstMechanics{
-      if mechanic.performJobOrPassItUp(job){
-        performed = true
-        break
-      }
-    }
-    if !performed{
-      print("No one is available to do this job.")
-    }
+  func performJob(job: Job){
+    firstMechanics.performJobOrPassItUp(job)
   }
 }

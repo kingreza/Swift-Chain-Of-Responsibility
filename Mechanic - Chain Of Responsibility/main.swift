@@ -8,35 +8,35 @@
 
 import Foundation
 
-var steve = Mechanic(skill: .MasterMechanic, name: "Steve Frank", nextMechanics: [])
-var joe = Mechanic(skill: .MasterMechanic, name: "Joe Alison", nextMechanics: [])
-var jack = Mechanic(skill: .MasterMechanic, name: "Jack Ryan", nextMechanics: [])
-var brian = Mechanic(skill: .MasterMechanic, name: "Drake Jin", nextMechanics: [])
+var steve = Mechanic(skill: .MasterMechanic, name: "Steve Frank")
+var joe = Mechanic(skill: .MasterMechanic, name: "Joe Alison")
+var jack = Mechanic(skill: .MasterMechanic, name: "Jack Ryan")
+var brian = Mechanic(skill: .MasterMechanic, name: "Drake Jin")
 
-var masterMechanics = [steve, joe, jack, brian]
+var masterMechanics = MechanicSkillGroup(skill: .MasterMechanic, mechanics: [steve, joe, jack, brian], nextLevel: nil)
 
-var tyson = Mechanic(skill: .Apprentice, name: "Tyson Trump", nextMechanics: masterMechanics)
-var tina = Mechanic(skill: .Apprentice, name: "Tina Bernard", nextMechanics: masterMechanics)
-var bryan = Mechanic(skill: .Apprentice, name: "Bryan Tram", nextMechanics: masterMechanics)
-var lin = Mechanic(skill: .Apprentice, name: "Lin Young", nextMechanics: masterMechanics)
+var tyson = Mechanic(skill: .Apprentice, name: "Tyson Trump")
+var tina = Mechanic(skill: .Apprentice, name: "Tina Bernard")
+var bryan = Mechanic(skill: .Apprentice, name: "Bryan Tram")
+var lin = Mechanic(skill: .Apprentice, name: "Lin Young")
 
-var apprenticeMechanics = [tyson, tina, bryan, lin]
+var apprenticeMechanics = MechanicSkillGroup(skill: .Apprentice, mechanics: [tyson, tina, bryan, lin], nextLevel: masterMechanics)
 
-var ken = Mechanic(skill: .Junior, name: "Ken Hudson", nextMechanics: apprenticeMechanics)
-var matt = Mechanic(skill: .Junior, name: "Matt Lowes", nextMechanics: apprenticeMechanics)
-var sandeep = Mechanic(skill: .Junior, name: "Sandeep Shenoy", nextMechanics: apprenticeMechanics)
-var tom = Mechanic(skill: .Junior, name: "Tom Berry", nextMechanics: apprenticeMechanics)
+var ken = Mechanic(skill: .Junior, name: "Ken Hudson")
+var matt = Mechanic(skill: .Junior, name: "Matt Lowes")
+var sandeep = Mechanic(skill: .Junior, name: "Sandeep Shenoy")
+var tom = Mechanic(skill: .Junior, name: "Tom Berry")
 
-var juniorMechanics = [ken, matt, sandeep, tom]
+var juniorMechanics = MechanicSkillGroup(skill: .Junior, mechanics: [ken, matt, sandeep, tom], nextLevel: apprenticeMechanics)
 
-var grant = Mechanic(skill: .OilChangeOnly, name: "Grant Hughes", nextMechanics: juniorMechanics)
-var larry = Mechanic(skill: .OilChangeOnly, name: "Larry White", nextMechanics: juniorMechanics)
-var bryant = Mechanic(skill: .OilChangeOnly, name: "Bryant Newman", nextMechanics: juniorMechanics)
-var reza = Mechanic(skill: .OilChangeOnly, name: "Reza Shirazian", nextMechanics: juniorMechanics)
-var laura = Mechanic(skill: .OilChangeOnly, name: "Laura Lee", nextMechanics: juniorMechanics)
-var arnold = Mechanic(skill: .OilChangeOnly, name: "Arnold Shummer", nextMechanics: juniorMechanics)
+var grant = Mechanic(skill: .OilChangeOnly, name: "Grant Hughes")
+var larry = Mechanic(skill: .OilChangeOnly, name: "Larry White")
+var bryant = Mechanic(skill: .OilChangeOnly, name: "Bryant Newman")
+var reza = Mechanic(skill: .OilChangeOnly, name: "Reza Shirazian")
+var laura = Mechanic(skill: .OilChangeOnly, name: "Laura Lee")
+var arnold = Mechanic(skill: .OilChangeOnly, name: "Arnold Shummer")
 
-var oilChangeOnlyes = [grant, larry, bryant, reza, laura, arnold]
+var oilChangeOnlyes = MechanicSkillGroup(skill: .OilChangeOnly, mechanics: [grant], nextLevel: juniorMechanics)
 
 var shop = Shop(firstMechanics: oilChangeOnlyes)
 

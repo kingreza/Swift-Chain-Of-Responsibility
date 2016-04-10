@@ -11,33 +11,22 @@ import Foundation
 class Mechanic{
   let skill: Skill
   var name: String
-  var isbusy: Bool = false
-  var nextMechanics:[Mechanic]
+  var isBusy: Bool = false
   
-  init(skill: Skill, name: String, nextMechanics: [Mechanic]){
+  init(skill: Skill, name: String){
     self.skill = skill
     self.name = name
-    self.nextMechanics = nextMechanics
   }
   
-  func performJobOrPassItUp(job: Job) -> Bool{
-
-    if isbusy{
-      return false
-    }
-    if job.minimumSkillSet.rawValue <= self.skill.rawValue{
-      self.isbusy = true
-      job.completed = true
-      print("\(name) with skill set \(skill) has started to do \(job.name)")
-      return true
+  func performJob(job: Job) -> Bool{
+    if job.minimumSkillSet > self.skill || isBusy == true{
+      assert(false, "This mechanic is either busy or insufficiently skilled for this job, he should have never been asked to perform it, there is something wrong in the chain of responsibility");
     }else
     {
-      for mechanic in nextMechanics{
-        if mechanic.performJobOrPassItUp(job){
-          return true
-        }
-      }
-      return false
+      isBusy = true
+      print("\(name) with skill set \(skill) has started to do \(job.name)")
+      job.completed = true
+      return true
     }
   }
 }

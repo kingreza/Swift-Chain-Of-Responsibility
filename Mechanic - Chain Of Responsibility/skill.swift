@@ -8,6 +8,14 @@
 
 import Foundation
 
-enum Skill: Int{
-  case OilChangeOnly = 1, Junior, Apprentice, MasterMechanic
+enum Skill: Int, Comparable{
+  case OilChangeOnly = 0, Junior, Apprentice, MasterMechanic
+}
+
+func < (lhs: Skill, rhs: Skill) -> Bool {
+  return lhs.rawValue < rhs.rawValue
+}
+
+func == (lhs: Skill, rhs: Skill) -> Bool {
+  return lhs.rawValue == rhs.rawValue
 }

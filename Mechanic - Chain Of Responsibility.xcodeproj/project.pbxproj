@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57A101C91CBB029B00F7A9A9 /* mechanic_skill_group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57A101C81CBB029B00F7A9A9 /* mechanic_skill_group.swift */; };
 		57C322591CB63EB500C3FFD3 /* skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C322581CB63EB500C3FFD3 /* skill.swift */; };
 		57C3225B1CB6401400C3FFD3 /* job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3225A1CB6401400C3FFD3 /* job.swift */; };
 		57C3225D1CB6433B00C3FFD3 /* shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3225C1CB6433B00C3FFD3 /* shop.swift */; };
@@ -27,6 +28,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		57A101C81CBB029B00F7A9A9 /* mechanic_skill_group.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mechanic_skill_group.swift; sourceTree = "<group>"; };
 		57C322581CB63EB500C3FFD3 /* skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = skill.swift; sourceTree = "<group>"; };
 		57C3225A1CB6401400C3FFD3 /* job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = job.swift; sourceTree = "<group>"; };
 		57C3225C1CB6433B00C3FFD3 /* shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shop.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				57C322581CB63EB500C3FFD3 /* skill.swift */,
 				57C3225A1CB6401400C3FFD3 /* job.swift */,
 				57C3225C1CB6433B00C3FFD3 /* shop.swift */,
+				57A101C81CBB029B00F7A9A9 /* mechanic_skill_group.swift */,
 			);
 			path = "Mechanic - Chain Of Responsibility";
 			sourceTree = "<group>";
@@ -132,6 +135,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				57C3225D1CB6433B00C3FFD3 /* shop.swift in Sources */,
+				57A101C91CBB029B00F7A9A9 /* mechanic_skill_group.swift in Sources */,
 				57C322591CB63EB500C3FFD3 /* skill.swift in Sources */,
 				57C5DFAC1CB63D6D008543D5 /* main.swift in Sources */,
 				57C5DFB31CB63DB3008543D5 /* mechanic.swift in Sources */,

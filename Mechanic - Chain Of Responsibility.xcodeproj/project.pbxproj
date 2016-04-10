@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		57C322591CB63EB500C3FFD3 /* skill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C322581CB63EB500C3FFD3 /* skill.swift */; };
+		57C3225B1CB6401400C3FFD3 /* job.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3225A1CB6401400C3FFD3 /* job.swift */; };
+		57C3225D1CB6433B00C3FFD3 /* shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C3225C1CB6433B00C3FFD3 /* shop.swift */; };
 		57C5DFAC1CB63D6D008543D5 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C5DFAB1CB63D6D008543D5 /* main.swift */; };
+		57C5DFB31CB63DB3008543D5 /* mechanic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57C5DFB21CB63DB3008543D5 /* mechanic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -23,8 +27,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		57C322581CB63EB500C3FFD3 /* skill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = skill.swift; sourceTree = "<group>"; };
+		57C3225A1CB6401400C3FFD3 /* job.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = job.swift; sourceTree = "<group>"; };
+		57C3225C1CB6433B00C3FFD3 /* shop.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = shop.swift; sourceTree = "<group>"; };
 		57C5DFA81CB63D6D008543D5 /* Mechanic - Chain Of Responsibility */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "Mechanic - Chain Of Responsibility"; sourceTree = BUILT_PRODUCTS_DIR; };
 		57C5DFAB1CB63D6D008543D5 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		57C5DFB21CB63DB3008543D5 /* mechanic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = mechanic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,10 @@
 			isa = PBXGroup;
 			children = (
 				57C5DFAB1CB63D6D008543D5 /* main.swift */,
+				57C5DFB21CB63DB3008543D5 /* mechanic.swift */,
+				57C322581CB63EB500C3FFD3 /* skill.swift */,
+				57C3225A1CB6401400C3FFD3 /* job.swift */,
+				57C3225C1CB6433B00C3FFD3 /* shop.swift */,
 			);
 			path = "Mechanic - Chain Of Responsibility";
 			sourceTree = "<group>";
@@ -119,7 +131,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				57C3225D1CB6433B00C3FFD3 /* shop.swift in Sources */,
+				57C322591CB63EB500C3FFD3 /* skill.swift in Sources */,
 				57C5DFAC1CB63D6D008543D5 /* main.swift in Sources */,
+				57C5DFB31CB63DB3008543D5 /* mechanic.swift in Sources */,
+				57C3225B1CB6401400C3FFD3 /* job.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -239,6 +255,7 @@
 				57C5DFB11CB63D6D008543D5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

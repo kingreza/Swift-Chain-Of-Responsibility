@@ -1,3 +1,5 @@
+<h1>Design Patterns in Swift: Chain of Responsibility</h1>
+This repository is part of a series. For the full list check out <a href="https://shirazian.wordpress.com/2016/04/11/design-patterns-in-swift/">Design Patterns in Swift</a>
 <h3>The problem:</h3>
 Not all mechanics are created equally. Some mechanics are more experienced and can do more than others. We need a system where every job is propagated from the least experienced mechanic to the most. This way  experienced mechanics that can perform more jobs are not busy with jobs that more junior mechanics can take care of.
 <h3>The solution:</h3>

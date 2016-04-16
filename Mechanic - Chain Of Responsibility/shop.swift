@@ -8,15 +8,15 @@
 
 import Foundation
 
-class Shop{
- 
+class Shop {
+
   private var firstMechanics: MechanicSkillGroup
-  
-  init(firstMechanics: MechanicSkillGroup){
+
+  init(firstMechanics: MechanicSkillGroup) {
       self.firstMechanics = firstMechanics
   }
-  
-  func performJob(job: Job) -> Bool{
+
+  func performJob(job: Job) -> Bool {
     return firstMechanics.performJobOrPassItUp(job)
   }
 }

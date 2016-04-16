@@ -8,7 +8,7 @@
 
 import Foundation
 
-enum Skill: Int, Comparable{
+enum Skill: Int, Comparable {
   case OilChangeOnly = 0, Junior, Apprentice, MasterMechanic
 }
 

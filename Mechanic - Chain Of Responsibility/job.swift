@@ -8,12 +8,12 @@
 
 import Foundation
 
-class Job{
+class Job {
   let minimumSkillSet: Skill
   let name: String
   var completed: Bool = false
-  
-  init(minimumSkillSet: Skill, name: String){
+
+  init(minimumSkillSet: Skill, name: String) {
     self.minimumSkillSet = minimumSkillSet
     self.name = name
   }

@@ -17,6 +17,6 @@ class Shop {
   }
 
   func performJob(job: Job) -> Bool {
-    return firstMechanics.performJobOrPassItUp(job)
+    return firstMechanics.firstAvailableMechanicForJobWithSkillLevel(job)
   }
 }

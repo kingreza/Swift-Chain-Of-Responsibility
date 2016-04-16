@@ -20,16 +20,16 @@ class MechanicSkillGroup {
     self.nextLevel = nextLevel
   }
 
-  func performJobOrPassItUp(job: Job) -> Bool {
-    if (job.minimumSkillSet > skill || mechanics.filter({$0.isBusy == false}).count == 0) {
+  func firstAvailableMechanicForJobWithSkillLevel(job: Job) -> Bool {
+    if (job.minimumSkillSet > skill || mechanics.filter({!$0.isBusy}).isEmpty) {
       if let nextLevel = nextLevel {
-        return nextLevel.performJobOrPassItUp(job)
+        return nextLevel.firstAvailableMechanicForJobWithSkillLevel(job)
       } else {
         print("No one is available to do this job")
         return false
       }
     } else {
-      if let firstAvailableMechanic = mechanics.filter({$0.isBusy == false}).first {
+      if let firstAvailableMechanic = mechanics.filter({!$0.isBusy}).first {
         return firstAvailableMechanic.performJob(job)
       }
       assert(false, "This should never be reached, our if-else statement is fully exhaustive. " +

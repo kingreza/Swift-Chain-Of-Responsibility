@@ -13,9 +13,10 @@ class Mechanic {
   var name: String
   var isBusy: Bool = false
 
-  init(skill: Skill, name: String) {
+  init(skill: Skill, name: String, isBusy: Bool = false) {
     self.skill = skill
     self.name = name
+    self.isBusy = isBusy
   }
 
   func performJob(job: Job) -> Bool {

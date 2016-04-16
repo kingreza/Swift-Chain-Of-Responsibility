@@ -13,8 +13,9 @@ class Job {
   let name: String
   var completed: Bool = false
 
-  init(minimumSkillSet: Skill, name: String) {
+  init(minimumSkillSet: Skill, name: String, completed: Bool = false) {
     self.minimumSkillSet = minimumSkillSet
     self.name = name
+    self.completed = completed
   }
 }

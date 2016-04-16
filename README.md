@@ -205,7 +205,7 @@ var oilChangeOnlyes = MechanicSkillGroup(skill: .OilChangeOnly,
 
 var shop = Shop(firstMechanics: oilChangeOnlyes)
 
-var jobs = [Job(minimumSkillSet: .Junior, name: "Windshield Viper"),
+var jobs = [Job(minimumSkillSet: .Junior, name: "Windshield Wiper"),
             Job(minimumSkillSet: .Apprentice, name: "Light Bulb Change"),
             Job(minimumSkillSet: .Apprentice, name: "Battery Replacement"),
             Job(minimumSkillSet: .OilChangeOnly, name: "General Oil Change"),
@@ -297,7 +297,7 @@ for job in jobs{
 Here is the result we get:
 
 ````swift
-Ken Hudson with skill set Junior has started to do Windshield Viper
+Ken Hudson with skill set Junior has started to do Windshield Wiper
 Tyson Trump with skill set Apprentice has started to do Light Bulb Change
 Tina Bernard with skill set Apprentice has started to do Battery Replacement
 Grant Hughes with skill set OilChangeOnly has started to do General Oil Change
